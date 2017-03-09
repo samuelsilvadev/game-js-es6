@@ -23,4 +23,12 @@ const heroImage = new Image();
 heroImage.addEventListener('load', () => {
 	heroReady = true;
 });
-heroImage.src = 'imgs/hero.jpg';
+heroImage.src = 'imgs/hero.png';
+
+//carregando imagem do monstro
+let monsterReady = false;
+const monsterImage = new Image();
+monsterImage.addEventListener('load', () => {
+	monsterReady = true;
+});
+monsterImage.src = 'imgs/monster.png';
