@@ -32,3 +32,12 @@ monsterImage.addEventListener('load', () => {
 	monsterReady = true;
 });
 monsterImage.src = 'imgs/monster.png';
+
+//criando objetos
+const hero = {
+	speed:256
+};
+const monster = {};
+
+//contador de monstros pegos
+let monstersCaught = 0;
