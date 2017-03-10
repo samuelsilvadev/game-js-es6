@@ -52,3 +52,11 @@ window.addEventListener('keydown', (e) => {
 window.addEventListener('keyup', (e) => {
 	delete keysDown[e.keyCode];
 }, false);
+
+// parte que volta os estados do jogo quando o heroi pega o monstro
+const reset = function(){
+	hero.x = canvas.width / 2;
+	hero.y = canvas.height / 2;
+	monster.x = 32 + (Math.random() * (canvas.width - 64))
+	monster.y = 32 + (Math.random() * (canvas.height - 64))
+}
