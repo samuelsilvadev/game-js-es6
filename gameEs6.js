@@ -48,3 +48,7 @@ const keysDown = {};
 window.addEventListener('keydown', (e) => {
 	keysDown[e.keyCode] = true;
 }, false);
+
+window.addEventListener('keyup', (e) => {
+	delete keysDown[e.keyCode];
+}, false);
