@@ -41,3 +41,10 @@ const monster = {};
 
 //contador de monstros pegos
 let monstersCaught = 0;
+
+//começando a manupular eventos
+const keysDown = {};
+
+window.addEventListener('keydown', (e) => {
+	keysDown[e.keyCode] = true;
+}, false);
