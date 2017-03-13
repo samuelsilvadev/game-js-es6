@@ -93,15 +93,15 @@ const verifyObjectsSamePosition = function(){
 //função de renderização
 const render = function(){
 	if(bgReady){
-		ctx.drawimage(bgImage,0,0);
+		ctx.drawImage(bgImage,0,0);
 	}
 
 	if(heroReady){
-		ctx.drawimage(heroImage,hero.x,hero.y);
+		ctx.drawImage(heroImage,hero.x,hero.y);
 	}
 
 	if(monsterReady){
-		ctx.drawimage(monsterImage,monster.x,monster.y);
+		ctx.drawImage(monsterImage,monster.x,monster.y);
 	}
 
 	ctx.fillStyle = 'rgb(250,250,250)';
@@ -119,8 +119,11 @@ const main = function(){
 	render();
 
 	then = now;
+	requestAnimationFrame(main);
 };
 
+const w = window;
+const requestAnimationFrame = w.requestAnimationFrame || w.webkitRequestAnimationFrame || w.msRequestAnimationFrame || w.mozRequestAnimationFrame;
 let then = Date.now();
 reset();
 main();
