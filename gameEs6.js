@@ -93,7 +93,7 @@ const verifyObjectsSamePosition = function(){
 //função de renderização
 const render = function(){
 	if(bgReady){
-		ctx.drawImage(bgImage,0,0);
+		ctx.drawImage(bgImage, 0, 0, 512, 512);
 	}
 
 	if(heroReady){
@@ -108,7 +108,7 @@ const render = function(){
 	ctx.font = '24px Helvetica';
 	ctx.textAlign = 'left';
 	ctx.textBaseLine = 'top';
-	ctx.fillText('MOstros Pegos:' + + monstersCaught, 32, 32);
+	ctx.fillText('Monstros Pegos:' + + monstersCaught, 32, 32);
 };
 
 const main = function(){
