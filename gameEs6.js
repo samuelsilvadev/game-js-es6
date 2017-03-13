@@ -59,7 +59,7 @@ const reset = function(){
 	hero.y = canvas.height / 2;
 	monster.x = 32 + (Math.random() * (canvas.width - 64))
 	monster.y = 32 + (Math.random() * (canvas.height - 64))
-}
+};
 
 //função que ira atualizar os objetos do jogo
 const updateObjects = function(modifier){
@@ -76,7 +76,7 @@ const updateObjects = function(modifier){
 		hero.x += hero.speed * modifier;
 	}
 	verifyObjectsSamePosition();
-}
+};
 
 const verifyObjectsSamePosition = function(){
 	if(
@@ -88,7 +88,7 @@ const verifyObjectsSamePosition = function(){
 		++monstersCaught;
 		reset();
 	}
-}
+};
 
 //função de renderização
 const render = function(){
@@ -109,4 +109,8 @@ const render = function(){
 	ctx.textAlign = 'left';
 	ctx.textBaseLine = 'top';
 	ctx.fillText('MOstros Pegos:' + + monstersCaught, 32, 32);
-}
+};
+
+const main = function(){
+	const now = Date.now();
+};
