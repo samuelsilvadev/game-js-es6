@@ -103,4 +103,10 @@ const render = function(){
 	if(monsterReady){
 		ctx.drawimage(monsterImage,monster.x,monster.y);
 	}
+
+	ctx.fillStyle = 'rgb(250,250,250)';
+	ctx.font = '24px Helvetica';
+	ctx.textAlign = 'left';
+	ctx.textBaseLine = 'top';
+	ctx.fillText('MOstros Pegos:' + + monstersCaught, 32, 32);
 }
