@@ -113,4 +113,14 @@ const render = function(){
 
 const main = function(){
 	const now = Date.now();
+	const delta = now - then;
+
+	updateObjects(delta / 1000);
+	render();
+
+	then = now;
 };
+
+let then = Date.now();
+reset();
+main();
