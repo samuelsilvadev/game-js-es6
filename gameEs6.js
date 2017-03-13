@@ -95,4 +95,12 @@ const render = function(){
 	if(bgReady){
 		ctx.drawimage(bgImage,0,0);
 	}
+
+	if(heroReady){
+		ctx.drawimage(heroImage,hero.x,hero.y);
+	}
+
+	if(monsterReady){
+		ctx.drawimage(monsterImage,monster.x,monster.y);
+	}
 }
