@@ -89,3 +89,10 @@ const verifyObjectsSamePosition = function(){
 		reset();
 	}
 }
+
+//função de renderização
+const render = function(){
+	if(bgReady){
+		ctx.drawimage(bgImage,0,0);
+	}
+}
