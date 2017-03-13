@@ -97,11 +97,11 @@ const render = function(){
 	}
 
 	if(heroReady){
-		ctx.drawImage(heroImage,hero.x,hero.y);
+		ctx.drawImage(heroImage,hero.x,hero.y, 32, 32);
 	}
 
 	if(monsterReady){
-		ctx.drawImage(monsterImage,monster.x,monster.y);
+		ctx.drawImage(monsterImage,monster.x,monster.y, 32, 32);
 	}
 
 	ctx.fillStyle = 'rgb(250,250,250)';
