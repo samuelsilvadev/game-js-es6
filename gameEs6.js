@@ -66,7 +66,7 @@ const updateObjects = function(modifier){
 	if(38 in keysDown){//seta para cima
 		hero.y -= hero.speed * modifier;
 	}
-	if(38 in keysDown){//seta para baixo
+	if(40 in keysDown){//seta para baixo
 		hero.y += hero.speed * modifier;
 	}
 	if(37 in keysDown){//seta para esquerda
