@@ -1,13 +1,13 @@
 # game-js-es6
 
-##Objetivo
+## Objetivo
 
 Pegar monstros espalhados na tela
 
-##Primeiro
+## Primeiro
 
 > npm install
 
-##Como executar 
+## Como executar 
 
 > npm run babel
